@@ -52,7 +52,7 @@ h6 {
 }
 
 .btn-outline {
-  @apply bg-transparent border-2 border-accent text-secondary hover:bg-accent hover:border-transparent hover:text-white;
+  @apply bg-transparent border-2 border-accent text-secondary hover:bg-accent hover:border-transparent hover:text-[#1F2937];
 }
 
 .input,
