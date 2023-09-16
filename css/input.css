@@ -12,11 +12,11 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-primary leading-[120%];
+  @apply text-secondary leading-[120%];
 }
 
 .h1 {
-  @apply text-[36px] xl:text-[64px] font-semibold;
+  @apply text-[38px] xl:text-[64px] font-semibold;
 }
 
 .h2 {
