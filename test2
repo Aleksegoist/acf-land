@@ -21,61 +21,67 @@
   </head>
 
   <body>
-    <header class="py-8 lg:pt-6 lg:pb-8 bg-gray-800">
-      <div class="container mx-auto flex flex-col gap-y-4 xl:gap-y-0">
-        <div class="flex justify-center xl:justify-normal">
-          <a href="#">
-            <img src="./assets/img/header/logo.svg" alt="logo" />
-          </a>
-        </div>
-        <nav class="hidden xl:flex lg:items-center lg:justify-between">
-          <ul class="flex gap-x-4">
-            <li>
-              <a
-                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
-                href="#"
-                >Головна</a
-              >
-            </li>
-            <li>
-              <a
-                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
-                href="#"
-                >Як замовити</a
-              >
-            </li>
-            <li>
-              <a
-                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
-                href="#"
-                >Портфоліо</a
-              >
-            </li>
-            <li>
-              <a
-                class="border-r pr-4 text-secondary hover:text-accent transition-all duration-300"
-                href="#"
-                >Блог</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-secondary hover:text-accent transition-all duration-300"
-                href="#"
-                >Контакти</a
-              >
-            </li>
-          </ul>
-        </nav>
+    <header class="relative min-h-screen md:flex">
+      <!-- mobile menu bar -->
+      <div class="bg-gray-800 flex justify-between py-3 md:hidden">
+        <!-- logo -->
+        <a href="#">
+          <img src="./assets/img/header/logo.svg" alt="logo" />
+        </a>
         <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
           <i class="ri-phone-fill text-2xl text-accent"></i>
           <div class="text-secondary">+38 (097) 986-12-06</div>
         </div>
+        <!-- mobile menu button -->
         <button
-          class="btn btn-sm btn-outline w-[255px] lg:w-auto mx-auto lg:mx-0">
-          Замовити замір
+          class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+          <svg
+            class="w-6 h-6 fill-white"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24">
+            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+          </svg>
         </button>
       </div>
+      <!-- sidebar -->
+      <div
+        class="sidebar bg-gray-800 text-blue-100 w-64 flex-col py-7 px-2 space-y-6 absolute inset-y-0 left-0 transform -translate-y-full md:relative md:translate-y-0 transition duration-200 ease-in-out">
+        <!-- logo -->
+        <a href="#">
+          <img src="./assets/img/header/logo.svg" alt="logo" />
+        </a>
+        <!-- nav -->
+        <nav>
+          <a
+            class="block py-2 px-4 text-2xl rounded hover:bg-accent hover:text-primary transition duration-200"
+            href="#"
+            >Головна</a
+          >
+          <a
+            class="block py-2 px-4 text-2xl rounded hover:bg-accent hover:text-primary transition duration-200"
+            href="#"
+            >Як замовити</a
+          >
+          <a
+            class="block py-2 px-4 text-2xl rounded hover:bg-accent hover:text-primary transition duration-200"
+            href="#"
+            >Портфоліо</a
+          >
+          <a
+            class="block py-2 px-4 text-2xl rounded hover:bg-accent hover:text-primary transition duration-200"
+            href="#"
+            >Блог</a
+          >
+          <a
+            class="block py-2 px-4 text-2xl rounded hover:bg-accent hover:text-primary transition duration-200"
+            href="#"
+            >Контакти</a
+          >
+        </nav>
+      </div>
+
+      <!-- content -->
+      <!-- <div class="text-primary p-10">content goes here</div> -->
     </header>
 
     <!-- hero -->

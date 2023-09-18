@@ -24,6 +24,7 @@ module.exports = {
         },
         grey: '#e8f0f1',
       },
+
       fontFamily: {
         primary: 'Lora',
       },
