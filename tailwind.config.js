@@ -20,7 +20,7 @@ module.exports = {
         accent: {
           DEFAULT: '#FFB000',
           secondary: '#18abbc',
-          tertiary: '#90c6cd',
+          tertiary: '#f6c14b',
         },
         grey: '#e8f0f1',
       },
